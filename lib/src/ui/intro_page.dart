@@ -82,16 +82,7 @@ class _IntroPageState extends State<IntroPage>
         children: [
           ...[
             if (page.image != null)
-              Expanded(
-                flex: page.decoration.imageFlex,
-                child: Align(
-                  alignment: page.decoration.imageAlignment,
-                  child: Padding(
-                    padding: page.decoration.imagePadding,
-                    child: page.image,
-                  ),
-                ),
-              ),
+              page.image!,
             Expanded(
               flex: page.decoration.bodyFlex,
               child: Align(
